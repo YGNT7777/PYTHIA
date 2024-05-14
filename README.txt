@@ -1,5 +1,13 @@
 The file requiers many personal and sensitive information. For obvious reasons it is not provided 
 and the users have to take these information by their own. In the code is mentioned clearly where the information should be placed.
+check files below:
+  1.pyhtonia-d31d22a4d0a5.json
+  2.code_for_server/credits.dat
+  3.calc_handler.py
+  4.main.py
+  5.code_for_server/main.py
+  6.code_for_server/scedule.py
+  7.reddit_scraping.py
 
 -----LIBRARIES REQUIRED-----
 pip install playwright
