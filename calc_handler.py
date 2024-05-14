@@ -20,7 +20,7 @@ def no_send(): #updates spreadsheet with 'no'
         gc = gspread.authorize(credentials)
 
 
-        url = 'https://docs.google.com/spreadsheets/d/1ctWjDCcINCa-1UxTsOYJ7e2JEFRl70EMp4BDVaPsIZs/gviz/tq?tqx=out:csv&sheet=pythonia'
+        url = 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
         worksheet = gc.open_by_url(url).sheet1  
         #takes data from spreadsheet
         df = pd.DataFrame(worksheet.get_all_records())
@@ -58,7 +58,7 @@ def yes_send_init():#new lines in spreadsheet
         gc = gspread.authorize(credentials)
 
        
-        url = 'https://docs.google.com/spreadsheets/d/1ctWjDCcINCa-1UxTsOYJ7e2JEFRl70EMp4BDVaPsIZs/gviz/tq?tqx=out:csv&sheet=pythonia'
+        url = 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
         worksheet = gc.open_by_url(url).sheet1  
 
         
@@ -91,7 +91,7 @@ def yes_send(new_email,previus_email):
     gc = gspread.authorize(credentials)
 
     
-    url = 'https://docs.google.com/spreadsheets/d/1ctWjDCcINCa-1UxTsOYJ7e2JEFRl70EMp4BDVaPsIZs/edit#gid=0'
+    url = 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
     worksheet = gc.open_by_url(url).sheet1  
 
     
@@ -118,7 +118,7 @@ def save_watch_list(wl):
     gc = gspread.authorize(credentials)
 
     
-    url = 'https://docs.google.com/spreadsheets/d/1ctWjDCcINCa-1UxTsOYJ7e2JEFRl70EMp4BDVaPsIZs/gviz/tq?tqx=out:csv&sheet=pythonia'
+    url = 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
     worksheet = gc.open_by_url(url).sheet1 
 
     
