@@ -22,4 +22,4 @@ To download the JSON file containing the service account credentials from the Go
 
 By following these steps, you can download the JSON file containing the service account credentials from the Google Cloud Console. Remember to keep this file secure and never share it publicly.
 
-Note: Paste everything here that the json file you will download contains and change this file from .txt to .json
+Note: Paste everything here that the json file you will download contains and change this file from "pyhtonia-d31d22a4d0a5.txt" to "pyhtonia-d31d22a4d0a5.json"
