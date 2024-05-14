@@ -1,6 +1,5 @@
 The file requiers many personal and sensitive information. For obvious reasons it is not provided 
-(except the spreadsheet. However, users can use their own spreadsheet by changing the necessary information in the code with their credentials)
-and the users have to take these information by their own. In the code is mentioned clearly where the information should be placed
+and the users have to take these information by their own. In the code is mentioned clearly where the information should be placed.
 
 -----LIBRARIES REQUIRED-----
 pip install playwright
