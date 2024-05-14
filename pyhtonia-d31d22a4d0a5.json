@@ -1,13 +1,23 @@
-{
-  "type": "service_account",
-  "project_id": "pyhtonia",
-  "private_key_id": "d31d22a4d0a5a66ec29401578c17e1c849b60e7e",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDoJIvsFBAYaYQT\nxFVLnUkIuP/IQ7V4P3uu3ust5/USYMIi5iDyKrU/3kk+oHWlwIe4oBGk/xVOzou7\nVUItKUwNznO9ORYumPhlNCErMk9AJ5ni7UeGPZc7MVBtXzzClhqzO/tYZxStnmtf\ncAFUDavi7BkOHiVG2vPWZdZ887hl3P5OCHgkeEFMFnU1G5Diwf917sKHWWEBn1St\nhtHGLVNYQPh0N31SxzOx0ks3DAZm73Ky8IgaCgH+M0pRkVyz9ytI4bH8lif8DU3z\n9b4aaIrlae9FUrYTTS7S+rSJfADljCYq8fm0UMZOMkRDllu5EriWuckigPivoapb\n4sZ2aOVXAgMBAAECggEABAAFqPx19d+BXGWdEKUZdMswK8u+cJidOJfJiGxb2hnU\nKv9yRDg2SW8sgyXqkQ4bE0KEnt8psf9wyta+3jrnqd12WFAyV9H824WTfWfkzLMl\ni700n85D/z2dr1WrnRRPLZUiZo4QmophySd9bXsTDKh1mrtIlNHsQSXIo6ccH3r3\nIf3AF32dcp59SClvdV1iOIyOjRnUO5YCDVOFILByG1dlXDt+OtqIzG8OkewT7kdn\n5klh4Mkr/qhZC6ZKZHnm8LP93ygaZRqNoKg3HLUhNAYa8UftRZEWs8ieZTU0WcW6\n0pSvKvZ9FY7PUdbbqJmvQyi9mNgxFAE0aAbMphVyBQKBgQD+L0l7mikNAU8bImen\nqayIBWmOSco6NK+UW/1LaKM/zrECW5NX96TehNl/OvgT/KZas7R7mLPq4ilhVyGb\n/VF6R5pL/dLIgMQYHDgwD9YccL+G7qXuO5EvhlkCi7RpUeNlHgKUpfsRh9m5FCXX\nczAhzYjv8fN1zab7Ye2KvGsD/QKBgQDpzPYaxj+Gp5yEQRAPU96WWRuhW49ttkAY\nbTCoqXpHeSbRZKeRRY0IeOjARuQcMnFN0Xq0cnBSt9z9xY2nejeMxe0BnKLBVBrc\nreaWnDSgMVfi2r2uu0c22wknJJ9UAI37lJWhdjAdXujS+b+Ybta+cTuotVRqJCW8\n1ybQc46M4wKBgQCqf52Swz1188LUOKe+1xlbxAWh4+06TczYfzvQMUgPrN0e775N\n61czy3j41t1Ayt/rR09w+GT20O1g1ck9kRXuJ8lf38pbo8PlSEiINJcyTI6sO7gh\nrOMeNcfO5VcGrl8RnKeufgeDItTwSIt5kVJf2jZYfLsJ8gBn7rAft3MxIQKBgQCw\nsGztHxWzNchbSrBQZRm6le0DrKZgS3N1Ak/bpvj6OtzTMjZQ2zcSSA3eAbUyegyW\nutD4veOVH86rGjlLcFm60Xmj1jRJ1r3WOLYi7Dn5NlEs6BKhknbnRfFM26htW13x\n2wCZ3S/PgoKBrqzVDi7MDdcAUMlSza6XYCG9Nxdr8QKBgEb835M7nHHKBIALtY8m\nYy+dNAINmd5UsrUwfZhQLBs5oZoHOgDbDpNjjkQu3rkRSlXs4ofqYef251woCidt\ncsA0HDsrjBbB8gFCJPnlo2JHJhVhPJAC22S2w1kvEy2NQjp2fBjRG/ZaRH/4G4GY\nrCKF2myDw4lG4pEpNjMtrAcY\n-----END PRIVATE KEY-----\n",
-  "client_email": "pythonia@pyhtonia.iam.gserviceaccount.com",
-  "client_id": "116755121782600139460",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pythonia%40pyhtonia.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+To download the JSON file containing the service account credentials from the Google Cloud Console, follow these steps:
+
+Sign in to Google Cloud Console: Go to the Google Cloud Console, and sign in with your Google account.
+
+Select the Project: If you haven't created a project yet, you'll need to create one. Once you have your project created or selected, navigate to the "IAM & Admin" section.
+
+Navigate to IAM & Admin: In the Google Cloud Console, navigate to the "IAM & Admin" page. You can usually find this in the hamburger menu on the top left corner.
+
+Service Accounts: In the IAM & Admin section, click on "Service accounts" from the left-hand side menu.
+
+Create a New Service Account: Click on "Create Service Account" if you haven't already created one. If you have created one already, click on the service account name to edit it.
+
+Fill in Details: Fill in the details for the service account. You can specify the service account name, ID, and description.
+
+Grant Permissions: Grant the necessary permissions to the service account. In this case, you'll likely need to grant permissions related to accessing and managing spreadsheets.
+
+Generate Key: After creating the service account, click on the "Create Key" button to generate a key for the service account. Choose the key type as JSON.
+
+Download the Key: Once the key is generated, it will prompt you to download the JSON file containing the credentials to your local system. Save this file securely, as it contains sensitive information including the private key.
+
+Use the Key: You can now use this JSON key file to authenticate your application or script when accessing Google Sheets API or any other Google API that requires authentication.
+
+By following these steps, you can download the JSON file containing the service account credentials from the Google Cloud Console. Remember to keep this file secure and never share it publicly.
