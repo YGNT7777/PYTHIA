@@ -1,23 +1,25 @@
 To download the JSON file containing the service account credentials from the Google Cloud Console, follow these steps:
 
-Sign in to Google Cloud Console: Go to the Google Cloud Console, and sign in with your Google account.
+1.Sign in to Google Cloud Console: Go to the Google Cloud Console, and sign in with your Google account.
 
-Select the Project: If you haven't created a project yet, you'll need to create one. Once you have your project created or selected, navigate to the "IAM & Admin" section.
+2.Select the Project: If you haven't created a project yet, you'll need to create one. Once you have your project created or selected, navigate to the "IAM & Admin" section.
 
-Navigate to IAM & Admin: In the Google Cloud Console, navigate to the "IAM & Admin" page. You can usually find this in the hamburger menu on the top left corner.
+3.Navigate to IAM & Admin: In the Google Cloud Console, navigate to the "IAM & Admin" page. You can usually find this in the hamburger menu on the top left corner.
 
-Service Accounts: In the IAM & Admin section, click on "Service accounts" from the left-hand side menu.
+4.Service Accounts: In the IAM & Admin section, click on "Service accounts" from the left-hand side menu.
 
-Create a New Service Account: Click on "Create Service Account" if you haven't already created one. If you have created one already, click on the service account name to edit it.
+5.Create a New Service Account: Click on "Create Service Account" if you haven't already created one. If you have created one already, click on the service account name to edit it.
 
-Fill in Details: Fill in the details for the service account. You can specify the service account name, ID, and description.
+6.Fill in Details: Fill in the details for the service account. You can specify the service account name, ID, and description.
 
-Grant Permissions: Grant the necessary permissions to the service account. In this case, you'll likely need to grant permissions related to accessing and managing spreadsheets.
+7.Grant Permissions: Grant the necessary permissions to the service account. In this case, you'll likely need to grant permissions related to accessing and managing spreadsheets.
 
-Generate Key: After creating the service account, click on the "Create Key" button to generate a key for the service account. Choose the key type as JSON.
+8.Generate Key: After creating the service account, click on the "Create Key" button to generate a key for the service account. Choose the key type as JSON.
 
-Download the Key: Once the key is generated, it will prompt you to download the JSON file containing the credentials to your local system. Save this file securely, as it contains sensitive information including the private key.
+9.Download the Key: Once the key is generated, it will prompt you to download the JSON file containing the credentials to your local system. Save this file securely, as it contains sensitive information including the private key.
 
-Use the Key: You can now use this JSON key file to authenticate your application or script when accessing Google Sheets API or any other Google API that requires authentication.
+10.Use the Key: You can now use this JSON key file to authenticate your application or script when accessing Google Sheets API or any other Google API that requires authentication.
 
 By following these steps, you can download the JSON file containing the service account credentials from the Google Cloud Console. Remember to keep this file secure and never share it publicly.
+
+Note: Paste everything here that the json file you will download contains and change this file from .txt to .json
