@@ -16,4 +16,9 @@ pip install oauth2client
 pip install datetime
 pip install vaderSentiment
 pip install praw
-    
+
+-------HOW TO RUN------------
+1.Use the guidance inside the code to place your personal data.
+2.Place code_for_server folder to a computer always open with internet connection and run the main.py inside code_for_server forever
+3.Run the main.py in the main branch from your computer
+
