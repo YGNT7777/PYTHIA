@@ -27,7 +27,7 @@ def send_mail(email_receiver):
 
     #opens the watch list file
     
-    url="https://docs.google.com/spreadsheets/d/1ctWjDCcINCa-1UxTsOYJ7e2JEFRl70EMp4BDVaPsIZs/gviz/tq?tqx=out:csv&sheet=pythonia"
+    url="YOUR_LINK_FOR_GOOGLE_SPEADSHEETS"
 
     df=pd.read_csv(url)
     print(df)
@@ -71,7 +71,7 @@ def send_mail(email_receiver):
             #the sender
     
             #reading credits
-            creds=open('credits.dat','r')
+            creds=open('credits.dat','r')#search: how to retrieve an app password for my e-mail. When you retrieve it place it in the credits.dat.
             password=creds.readline()
             #creating the smtp server
             smtp_conn=smtplib.SMTP("smtp.gmail.com",587)
