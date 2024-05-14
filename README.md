@@ -4,17 +4,17 @@ The file requiers many personal and sensitive information. For obvious reasons i
 and the users have to take these information by their own. In the code is mentioned clearly where the information should be placed
 
 -----LIBRARIES REQUIRED-----
-pip install playwright
-run this in cmd --> playwright install
-pip install schedule
-pip install PyQt6
-pip install Re
-pip install matplotlib
-pip install yfinance
-pip install gspread
-pip install pandas
-pip install oauth2client
-pip install datetime
-pip install vaderSentiment
+pip install playwright\n
+run this in cmd --> playwright install\n
+pip install schedule\n
+pip install PyQt6\n
+pip install Re\n
+pip install matplotlib\n
+pip install yfinance\n
+pip install gspread\n
+pip install pandas\n
+pip install oauth2client\n
+pip install datetime\n
+pip install vaderSentiment\n
 pip install praw
     
