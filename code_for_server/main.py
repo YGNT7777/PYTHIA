@@ -6,7 +6,7 @@ import datetime
 
 
 def job():
-    url="https://docs.google.com/spreadsheets/d/1ctWjDCcINCa-1UxTsOYJ7e2JEFRl70EMp4BDVaPsIZs/gviz/tq?tqx=out:csv&sheet=pythonia"
+    url="YOUR_LINK_TO_GOOGLE_SPREADSHEETS"
     df=pd.read_csv(url)
     check_date(df)
 
