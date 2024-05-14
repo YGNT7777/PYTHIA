@@ -20,7 +20,7 @@ def send_mail(email_receiver):
 
     pas="YOUR_PASSWORD_IN_TWITTER"
 
-    mail="yOUR_EMAIL_IN_TWITTER"
+    mail="YOUR_EMAIL_IN_TWITTER"
 
     #creating a Scraper object
     x_scrape=Scraper(username,mail,pas)
