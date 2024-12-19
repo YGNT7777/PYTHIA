@@ -1,5 +1,7 @@
 # PYTHIA
 
+![pythia](https://github.com/user-attachments/assets/70e0bda3-5a94-42e2-abe2-ba3224c2584a)
+
 ## DESCRIPTION
 Our application is a desktop application with a graphical user interface. Its main purpose is to help investors make informed investment decisions using sentiment analysis from social media posts, such as Twitter (X) and Reddit. Additionally, our application performs risk analysis based on the percentage of positive, neutral, and negative posts. The user can maintain a watchlist of up to 5 items and track the price trends of the corresponding assets (cryptocurrencies, stocks, etc.) on their watchlist. Since cryptocurrencies and the stock market change at a rapid pace, our application also provides the user with daily email updates on the items in their watchlist.
 
