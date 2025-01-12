@@ -33,6 +33,17 @@ run this in cmd --> `playwright install`
 - `pip install vaderSentiment`
 - `pip install praw`
 
+### You can download the libraries by running
+
+```bash
+pip install requirements.txt
+```
+
+After you have install the requirements run:
+```bash
+playwright install
+```
+
 ## HOW TO RUN
 - 1.Use the guidance inside the code to place your personal data.
 - 2.Place code_for_server folder to a computer always open with internet connection and run the main.py inside code_for_server forever
@@ -44,4 +55,3 @@ run this in cmd --> `playwright install`
 - PETROS SAGIAKOS
 - GEORGIOS LYMPITAKHS
 - ERIKOS KOUTSOURHS
-
