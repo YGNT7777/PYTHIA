@@ -45,18 +45,18 @@ playwright install
 
 ## HOW TO RUN
 
--1. You will need to go to reddit_scraping.py and add your data of your reddit account. ( You will nead to create your own reddit account)
--2. Then run the program normally
+- 1. You will need to go to reddit_scraping.py and add your data of your reddit account. ( You will nead to create your own reddit account)
+- 2. Then run the program normally
 
 ### If you want to also have a server.
--1. Go edit to calc_handler.py. On the url add 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
--2. Go edit code_for_server/schedule.py and add on the variables username,pas and mail your information.
--3. Go edit code_for_server/main.py and on url add "YOUR_LINK_TO_GOOGLE_SPREADSHEETS"
--4. Run on code_for_server/main.py to run the server.
+- 1. Go edit to calc_handler.py. On the url add 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
+- 2. Go edit code_for_server/schedule.py and add on the variables username,pas and mail your information.
+- 3. Go edit code_for_server/main.py and on url add "YOUR_LINK_TO_GOOGLE_SPREADSHEETS"
+- 4. Run on code_for_server/main.py to run the server.
 
 ### In case you want to change the hour you receive the notifications from the server.
--1. Go to code_for_server/main.py
--2. On schedule.every().day.at("18:00").do(job) adjust the time as per your requirement
+- 1. Go to code_for_server/main.py
+- 2. On schedule.every().day.at("18:00").do(job) adjust the time as per your requirement
 
 
 
