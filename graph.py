@@ -23,9 +23,7 @@ from t_scraper2 import Scraper
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg, NavigationToolbar2QT as NavigationToolbar
 from matplotlib.figure import Figure
 import yfinance as yf
-
-
-
+import pandas as pd
 
 
 class MplCanvas(FigureCanvasQTAgg):
@@ -33,6 +31,7 @@ class MplCanvas(FigureCanvasQTAgg):
         fig = Figure(figsize=(width, height), dpi=dpi)
         self.axes = fig.add_subplot(111)
         super().__init__(fig)
+        
 #The class for the finance graph
 class Graph(QMainWindow):
     def __init__(self):
@@ -74,24 +73,55 @@ class Graph(QMainWindow):
         self.needs_update = False
 
     def update_plot(self):
-        if self.needs_update:
-            if hasattr(self, 'stock_data'):
-                self.sc.axes.cla()
-                self.sc.axes.plot(self.stock_data.index, self.stock_data['Close'], color='green', linewidth=2)  # Plotting close prices
-                self.sc.axes.fill_between(self.stock_data.index, self.stock_data['Close'], color='green', alpha=0.3)  # Filling the area under the line
-                self.sc.draw()
+        try:
+            if self.needs_update:
+                if hasattr(self, 'stock_data') and not self.stock_data.empty:
+                    if 'Close' in self.stock_data.columns:
+                        # Validate 'Close' column
+                        close_data = self.stock_data['Close']
+                        if isinstance(close_data, pd.DataFrame):
+                            close_data = close_data.squeeze()  # Convert DataFrame to Series if needed
 
-                if self.selected_stock:
-                    current_price = self.stock_data['Close'][-1]  # Get the current price
-                    self.stock_info_label.setText(f"{self.selected_stock}: {current_price:.2f}")
+                        if close_data.empty:
+                            print("Error: 'Close' column is empty. Nothing to plot.")
+                            return
 
+                        x = self.stock_data.index
+                        y = close_data.values  # Ensure it's a 1D numpy array
+
+                        # Clear and plot
+                        self.sc.axes.cla()
+                        self.sc.axes.plot(x, y, color='green', linewidth=2)
+                        self.sc.axes.fill_between(x, y, color='green', alpha=0.3)
+                        self.sc.draw()
+
+                        # Update stock info label
+                        current_price = close_data.iloc[-1]
+                        self.stock_info_label.setText(f"{self.selected_stock}: {current_price:.2f}")
+                    else:
+                        print("Error: 'Close' column not found in stock_data.")
+                else:
+                    print("Error: stock_data is empty or invalid.")
             self.needs_update = False
-            
+        except Exception as e:
+            print(f"Error in update_plot: {e}")
+
 
     def onMyToolBarButtonClick(self, symbol):
+        print(f"Fetching data for symbol: {symbol}")  # Debugging log
         self.selected_stock = symbol
-        self.stock_data = yf.download(tickers=symbol, period="1mo", interval="30m")
-        self.needs_update = True
+        self.needs_update = False  # Disable updates until the data is ready
+
+        try:
+            # Fetch data from Yahoo Finance
+            self.stock_data = yf.download(tickers=symbol, period="1mo", interval="30m")
+            if self.stock_data.empty:
+                print(f"No data returned for {symbol}. Check the symbol or connection.")  # Debugging log
+            else:
+                self.needs_update = True
+                print("WORKS")
+        except Exception as e:
+            print(f"Error fetching data for {symbol}: {e}")  # Debugging log
 
 
 

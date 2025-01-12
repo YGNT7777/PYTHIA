@@ -2,8 +2,6 @@
 
 ![pythia](https://github.com/user-attachments/assets/70e0bda3-5a94-42e2-abe2-ba3224c2584a)
 
-# WARNING : calc_handler.py doesn't work needs maintanance. There is a problem while it does web scrapping
-
 ## DESCRIPTION
 Our application is a desktop application with a graphical user interface. Its main purpose is to help investors make informed investment decisions using sentiment analysis from social media posts, such as Twitter (X) and Reddit. Additionally, our application performs risk analysis based on the percentage of positive, neutral, and negative posts. The user can maintain a watchlist of up to 5 items and track the price trends of the corresponding assets (cryptocurrencies, stocks, etc.) on their watchlist. Since cryptocurrencies and the stock market change at a rapid pace, our application also provides the user with daily email updates on the items in their watchlist.
 
@@ -32,6 +30,7 @@ run this in cmd --> `playwright install`
 - `pip install datetime`
 - `pip install vaderSentiment`
 - `pip install praw`
+- `pip install pandas`
 
 ### You can download the libraries by running
 
@@ -45,9 +44,20 @@ playwright install
 ```
 
 ## HOW TO RUN
-- 1.Use the guidance inside the code to place your personal data.
-- 2.Place code_for_server folder to a computer always open with internet connection and run the main.py inside code_for_server forever
-- 3.Run the main.py in the main branch from your computer
+
+-1. You will need to go to reddit_scraping.py and add your data of your reddit account. ( You will nead to create your own reddit account)
+-2. Then run the program normally
+
+### If you want to also have a server.
+-1. Go edit to calc_handler.py. On the url add 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
+-2. Go edit code_for_server/schedule.py and add on the variables username,pas and mail your information.
+-3. Go edit code_for_server/main.py and on url add "YOUR_LINK_TO_GOOGLE_SPREADSHEETS"
+-4. Run on code_for_server/main.py to run the server.
+
+### In case you want to change the hour you receive the notifications from the server.
+-1. Go to code_for_server/main.py
+-2. On schedule.every().day.at("18:00").do(job) adjust the time as per your requirement
+
 
 
 ## Made by

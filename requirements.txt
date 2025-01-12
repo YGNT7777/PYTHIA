@@ -8,3 +8,4 @@ pandas
 oauth2client
 vaderSentiment
 praw
+pandas
