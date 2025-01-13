@@ -46,7 +46,8 @@ playwright install
 ## HOW TO RUN
 
 - 1. You will need to go to reddit_scraping.py and add your data of your reddit account. ( You will nead to create your own reddit account)
-- 2. Then run the program normally
+- 2. Go to main.py and add your X account on variables user/mail and pas
+- 3. Then run the program normally
 
 ### If you want to also have a server.
 - 1. Go edit to calc_handler.py. On the url add 'YOUR_LINK_TO_GOOGLE_SPREADSHEETS'
