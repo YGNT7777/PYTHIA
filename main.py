@@ -21,6 +21,7 @@ from graph import MplCanvas,Graph
 user="YOUR_USERNAME"
 mail="YOUR_EMAIL"
 pas="YOUR_PASSWORD"
+
 x_scrape=Scraper(user,mail,pas)
 
 class Ui_MainWindow(object):
