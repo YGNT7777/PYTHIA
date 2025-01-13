@@ -18,9 +18,9 @@ import yfinance as yf
 import ticker_extractor
 from graph import MplCanvas,Graph
 
-user="@peterhaha441184"
-mail="mailgiadns@gmail.com"
-pas="Habakkuk3:18"
+user=""
+mail=""
+pas=""
 x_scrape=Scraper(user,mail,pas)
 
 class Ui_MainWindow(object):
