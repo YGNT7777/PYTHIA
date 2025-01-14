@@ -1,0 +1,11 @@
+playwright
+schedule
+PyQt6
+matplotlib
+yfinance
+gspread
+pandas
+oauth2client
+vaderSentiment
+praw
+pandas
