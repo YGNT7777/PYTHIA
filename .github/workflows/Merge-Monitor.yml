@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Merge Monitor
-        uses: YGNT7777//Merge-Monitor/actions/check-sensitive-files@v1.0.0
+        uses: YGNT7777/Merge-Monitor/actions/check-sensitive-files@v1.0.0
