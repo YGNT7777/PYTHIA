@@ -1,0 +1,3 @@
+_config.yml
+.gitmodules
+.gitignore
